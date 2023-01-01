@@ -1,17 +1,13 @@
 import { Button, StyleSheet, Text, View, ScrollView,Pressable } from 'react-native'
 import React,{useState,useEffect} from 'react'
-import questions from './Question';
-import Ques from './Ques';
+import questions from './question';
+import Ques from './ques';
 
 import {colors} from "../../style/colors"
 
-const Quiz = ({navigation}) => {
+const Questionery = ({navigation}) => {
 
-
-  const [page, setPage] = useState(1)
   const [index,setIndex]=useState(0)
-
-  const[arrayOfAnswers, setArrayOfAnswers] = useState([])
 
    const Previous=()=>{
     if(index>0){
@@ -19,7 +15,6 @@ const Quiz = ({navigation}) => {
       
     }
    }
-
 
    const Next=()=>{
     if(index<29){
@@ -33,27 +28,15 @@ const Quiz = ({navigation}) => {
   // and return it to parent component 
 
   const arr = [45,33, 43,35, 55,37]
-
-
-
   // const getA = (arrr) =>{
   //   for (let i of arrr) {
   //     arr.push(i)
 
   // }
-
-
-
- ////////////////****************22 11 масив  */
-
   const getAnswers = (array) => {
-    
     // setArrayOfAnswers([...arrayOfAnswers, ...array]
-
     // let arr = array
     // )
-   
-  
     console.log(array);
     // console.log(array)
   }
@@ -76,12 +59,10 @@ const Quiz = ({navigation}) => {
       <Pressable
       title='Submit Your Quiz'
       style={ index === 29 ? styles.submissionButton :styles.submissionButton2 }
-      // onPress=  {() => navigation.navigate("EndOfQ", {id: 85} )}
       onPress=  {() =>  navigation.navigate("Результат", { data: arr} 
                   )
       }
 
-      
       >
         <Text style = {styles.submissionButtonText}> Відправити </Text>
       </Pressable>
@@ -91,7 +72,7 @@ const Quiz = ({navigation}) => {
 
 
 
-export default Quiz
+export default Questionery
 
 
 const styles = StyleSheet.create({
