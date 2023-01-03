@@ -2,8 +2,8 @@ import {  StyleSheet, Text, View, Button,Dimensions, Image, Pressable } from 're
 import React from 'react'
 
 import {BarChart} from "react-native-chart-kit"
-import {colors} from "../../style/colors"
-import questions from './Question' 
+import { colors } from '../../style/colors'
+import questions from './question' 
 
 
 const EndOfQuestionery = ({navigation, route}) => {

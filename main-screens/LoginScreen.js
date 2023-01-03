@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 import { Input, Image } from "react-native-elements";
 import { StatusBar } from "expo-status-bar";
 import { KeyboardAvoidingView } from "react-native";
-import { auth } from "../firebase";
+import { auth } from "../firebase/Firebase"
 import { Button, Text } from "@rneui/themed";
 import { colors } from "../style/colors";
 

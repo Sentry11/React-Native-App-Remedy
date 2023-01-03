@@ -2,10 +2,10 @@ import React, { useLayoutEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { Input } from "react-native-elements/dist/input/Input";
 import { AntDesign } from "@expo/vector-icons";
-import { db } from "../firebase";
+import { db } from "../firebase/Firebase";
 import { Button, Text } from "@rneui/themed";
 
-import {colors} from "../style/colors.js" 
+import { colors } from "../style/colors";
 
 
 const AddChatScreen = ({ navigation }) => {

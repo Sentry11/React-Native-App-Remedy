@@ -3,8 +3,8 @@ import React,{useState,useEffect} from 'react'
 import questions from './question';
 import Ques from './ques';
 
-import {colors} from "../../style/colors"
 
+import { colors } from '../../style/colors'
 const Questionery = ({navigation}) => {
 
   const [index,setIndex]=useState(0)

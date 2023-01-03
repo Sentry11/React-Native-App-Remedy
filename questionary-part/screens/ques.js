@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import React, { useState,useEffect,useContext,createContext } from "react";
 
-import {colors} from "../../style/colors"
+import { colors } from '../../style/colors'
 
 
 

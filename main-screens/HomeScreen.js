@@ -3,10 +3,10 @@ import { SafeAreaView } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { StyleSheet, ScrollView, View,Text } from "react-native";
 import CustomListItem from "../main-components/CustomListItem";
-import { auth, db } from "../firebase";
+import { auth, db } from "../firebase/Firebase";
 import { AntDesign } from "@expo/vector-icons";
 
-import {colors } from '../style/colors.js'
+import { colors } from "../style/colors";
 
 const HomeScreen = ({ navigation }) => {
     const [chats, setChats] = useState([]);

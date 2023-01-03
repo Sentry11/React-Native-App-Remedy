@@ -12,10 +12,10 @@ import ChatScreen from "./main-screens/ChatScreen";
 import MainScreen from "./main-screens/MainScreen";
 
 import Questionery from "./questionary-part/screens/questionery";
-import EndOfQuestionery from "./Questionery/Screens/EndOfQuestionery";
-import MusicPlayer from "./AudioPlayer/screens/MusicPlayer";
-import DirectoryMainScreen from "./Directory/DirectoryMainScreen";
-import SinglePageDirectory from "./Directory/SinglePageDirectory";
+import EndOfQuestionery from "./questionary-part/screens/end-of-questionery";
+import MusicPlayer from "./audio-player/screens/audio-player";
+import DirectoryMainScreen from "./directory-part/directory-main";
+import SinglePageDirectory from "./directory-part/directory-single-page"
 
 import { colors } from "./style/colors";
 

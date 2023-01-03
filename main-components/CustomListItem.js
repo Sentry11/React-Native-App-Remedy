@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { StyleSheet } from "react-native";
 import { Avatar } from "react-native-elements";
 import { ListItem } from "react-native-elements";
-import { db } from "../firebase";
+import { db } from "../firebase/Firebase";
 
 import {colors} from "../style/colors.js"
 
